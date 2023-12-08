@@ -6,7 +6,8 @@ import {
   Route,
   Router,
   Routes,
-  Link
+  Link,
+  HashRouter
 } from "react-router-dom";
 import Component from './Component';
 function App() {
@@ -17,13 +18,13 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <BrowserRouter basename='/routeTest'>
+        <HashRouter basename='/'>
         <Link to="/actionCamp" >Component</Link>
 
         <Routes>          
           <Route path="/actionCamp" element={<Component />}></Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       </header>
       <div>
         Component 1

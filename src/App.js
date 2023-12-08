@@ -7,7 +7,6 @@ import {
   Router,
   Routes,
 } from "react-router-dom";
-import { Link } from "react-router-dom";
 import Component from './Component';
 function App() {
   return (
@@ -17,9 +16,8 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-    
+
         <BrowserRouter>
-        <Link to="/actionCamp">Home</Link>
         <Routes>
           <Route path="/actionCamp" element={<Component />}></Route>
         </Routes>

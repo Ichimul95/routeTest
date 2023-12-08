@@ -17,8 +17,9 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-          <Link to="/actionCamp" >Component</Link>
         <BrowserRouter>
+        <Link to="/actionCamp" >Component</Link>
+
         <Routes>          
           <Route path="/actionCamp" element={<Component />}></Route>
         </Routes>

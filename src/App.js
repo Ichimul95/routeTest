@@ -13,16 +13,16 @@ import React, { useEffect } from 'react';
 
 import Component from './Component';
 function App() {
-  const navigate = useNavigate();
-  const location = useLocation();
-  useEffect(() => {
-    // Check if the current URL path matches the specific one triggering the redirect
-    const currentPath = location.pathname;
-    if (currentPath === '/actionCamp') {
-      // Redirect using navigate
-      navigate('/actionCamp'); // Replace '/your-component-path' with your desired component path
-    }
-  }, [location, navigate]);
+  // const navigate = useNavigate();
+  // const location = useLocation();
+  // useEffect(() => {
+  //   // Check if the current URL path matches the specific one triggering the redirect
+  //   const currentPath = location.pathname;
+  //   if (currentPath === '/actionCamp') {
+  //     // Redirect using navigate
+  //     navigate('/actionCamp'); // Replace '/your-component-path' with your desired component path
+  //   }
+  // }, [location, navigate]);
   return (
     <div className="App">
       <header className="App-header">

@@ -9,6 +9,8 @@ import {
   Link,
   useNavigate, useLocation
 } from "react-router-dom";
+import React, { useEffect } from 'react';
+
 import Component from './Component';
 function App() {
   const navigate = useNavigate();

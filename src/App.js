@@ -27,7 +27,6 @@ function App() {
         <BrowserRouter>
         <Routes>
           <Route path="/actionCamp" element={<Component />}></Route>
-          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </BrowserRouter>
       </header>

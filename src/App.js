@@ -16,12 +16,12 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-
-        {/* <BrowserRouter>
-        <Routes>
+          <Link to="/actionCamp" >Component</Link>
+        <BrowserRouter>
+        <Routes>          
           <Route path="/actionCamp" element={<Component />}></Route>
         </Routes>
-      </BrowserRouter> */}
+      </BrowserRouter>
       </header>
       <div>
         Component 1

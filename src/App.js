@@ -30,13 +30,12 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <BrowserRouter basename='/'>
+       
         <Link to="/actionCamp" >Component</Link>
 
         <Routes>          
           <Route path="/actionCamp" element={<Component />}></Route>
         </Routes>
-      </BrowserRouter>
       </header>
       <div>
         Component 1

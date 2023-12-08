@@ -6,6 +6,7 @@ import {
   Route,
   Router,
   Routes,
+  Link
 } from "react-router-dom";
 import Component from './Component';
 function App() {

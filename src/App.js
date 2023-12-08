@@ -7,10 +7,20 @@ import {
   Router,
   Routes,
   Link,
-  HashRouter
+  useNavigate, useLocation
 } from "react-router-dom";
 import Component from './Component';
 function App() {
+  const navigate = useNavigate();
+  const location = useLocation();
+  useEffect(() => {
+    // Check if the current URL path matches the specific one triggering the redirect
+    const currentPath = location.pathname;
+    if (currentPath === '/actionCamp') {
+      // Redirect using navigate
+      navigate('/actionCamp'); // Replace '/your-component-path' with your desired component path
+    }
+  }, [location, navigate]);
   return (
     <div className="App">
       <header className="App-header">
@@ -18,13 +28,13 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <HashRouter basename='/'>
+        <BrowserRouter basename='/'>
         <Link to="/actionCamp" >Component</Link>
 
         <Routes>          
           <Route path="/actionCamp" element={<Component />}></Route>
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
       </header>
       <div>
         Component 1

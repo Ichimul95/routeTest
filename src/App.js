@@ -18,7 +18,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
     
-        <BrowserRouter basename='/'>
+        <BrowserRouter>
         <Link to="/actionCamp">Home</Link>
         <Routes>
           <Route path="/actionCamp" element={<Component />}></Route>
